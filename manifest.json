@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trip sheet wins",
+  "description": "This extension creates a tripsheet from a logged on astro session",
+  "version": "1.0",
+  
+  "background": {
+  	"scripts": ["eventPage.js"],
+  	"persistent": false
+  },
+  
+  "content_scripts": [{
+  	"matches": ["*://log.planesense.com/astroweb/","*://log.planesense.com/ASTROWeb/"],
+  	"js": ["generateTripSheet.js"]
+  }],
+
+  "page_action": {
+    "default_icon": "icon.png",
+    "defulat_popup": "popup.html"
+  },
+  
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "*://log.planesense.com/ASTROWeb/"
+  ]
+}

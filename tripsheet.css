@@ -1,0 +1,65 @@
+/* TRIP SHEETS */
+
+.tripsheet {
+  font-family: sans-serif;
+}
+
+.tripsheet div {
+  padding: 2px
+}
+
+.trip-head {
+  height: 20px;
+  font-size: 1.5em;
+  padding: 4px;
+}
+
+.leg div {
+  border: 1px solid black;
+}
+
+.dep, .dep-arpt, .arr, .arr-arpt {
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+.dep, .arr {
+  float: left;
+}
+
+.dep-arpt, .arr-arpt {
+  float: left; 
+}
+
+.dep-fbo, .arr-fbo {
+  clear: left;
+}
+
+.block-times .bul {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.block-times .bur {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.block-times .bml {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.block-times .bmr {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.block-times .bll {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.block-times .blr {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
