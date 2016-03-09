@@ -15,7 +15,8 @@ chrome.runtime.onMessage.addListener(
                 "from a content script:" + sender.tab.url :
                 "from the extension");
     if (request.action == "jsonTripSheet")
-      var jsonFlights = request.source;
+      var jsonTrips = request.trips;
+      var jsonFlights = "\"Flights\":" + request.flights;
       
       //open up the tripsheet template
       chrome.tabs.create({url: "tripsheet.html"}, function(tab){
